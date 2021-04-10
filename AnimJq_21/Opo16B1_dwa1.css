@@ -1,0 +1,48 @@
+body {
+    width: 1000px;
+    margin: 0px auto;
+}
+/* Maquetación de la cabecera con flotantes "float" */
+header {
+    background-color: #1d4276;
+    overflow: hidden;
+/* propiedad importante para la correcta visualización de las capas flotantes que
+contiene. Si no se especifica esta propiedad aquí, se devería declarar la regla CSS
+clear: both; en la capa #contenedorViajes */
+    height: 1%; /* opcional */
+}
+header img, header section:first-child{float: left;}
+header section+section{float: right;margin-right: 20px;}
+
+
+header img{
+    width: 0px; height: 0px ;
+    opacity: 0; /* animaremos la aparición con jquery */
+/* Estas tres reglas CSS iniciales para la imagen de la cabecera también se puede 
+encontrar en código jQuery (obligatoriamente en alguno de los dos sitios) */
+    border: 4px solid white;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+header img:hover{box-shadow: 4px 2px 6px white; /* los dos primeros parámetros son
+obligados pero pueden tener valores distintos y el tercero y el cuarto son los que se
+piden */
+}
+
+#contenedorViajes{width: 320px; float: left;
+margin: 10px 0px 10px 10px;} /* estos valores, si no, no cobrán viajes en una fila*/
+
+footer{clear: left;} /*solo en el caso de no haber definido la regla overflow:hidden 
+en la capa #contenedorViajes */
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (orientation:portrait){
+    body{ width: 100%;}
+    header{text-align: center;}
+    Header img, header section:first-child{float:none;}
+
+#contenedorViajes section{float: none; margin: 10px auto;}
+footer{clear:none;} /*solo en el caso de haber definido la regla clear:left 
+anteriormente en el footer */
+}
