@@ -1,0 +1,12 @@
+div.out { 
+    width: 220px;  
+    height: 125px;  
+    margin-left: 15px;  
+    background-color: #9cf;
+}  
+div.in { 
+    width: 70%;  
+    height: 50%;  
+    background-color: #fff;  
+    margin: 15px auto;
+}  
