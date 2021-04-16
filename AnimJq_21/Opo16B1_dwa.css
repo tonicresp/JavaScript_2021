@@ -7,7 +7,7 @@ header {
     background-color: #1d4276; /* borde blanco */
     overflow: hidden; /*contenido recortado y no barras desplazamiento */
 /* propiedad importante para la correcta visualización de las capas flotantes que
-contiene. Si no se especifica esta propiedad aquí, se devería declarar la regla CSS
+contiene. Si no se especifica esta propiedad aquí, se debería declarar la regla CSS
 clear: both; en la capa #contenedorViajes */
     height: 1%; /* opcional */
 }
