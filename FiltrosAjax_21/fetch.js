@@ -17,7 +17,7 @@ const Nombre=(idPost)=> {
     console.log(idPost)
 
 }
-Nombre(8)
+Nombre(6)
 
 const NombreAsync = async (idPost)=> {
 
