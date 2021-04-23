@@ -3,9 +3,18 @@ $(document).ready(function(){
         $("#caja").load("fichero1.html");  //(url[,data][,complete])
     });  
     $("#boton2").click(function() {  
-        $("#caja").load("fichero2.html #par2", function(){
-            alert ('te has traido el parrafo2')
-        });  
+        $.ajax({
+            url: "fichero2.html", //obligatoria
+            success: function(datos){ //data datos devueltos por el servidor
+                $("#caja").html (datos); //devuelve codigo HTML formato texto
+                console.log(datos)
+                alert("hecho con AJAX");
+                           
+            }
+        })
+        //$("#caja").load("fichero2.html #par2", function(){
+          //  alert ('te has traido el parrafo2')
+        //});  
         //le indicamos en data que queremos traer y ejecutamos complete, la funcion Callback
     });  
     $("#boton3").on("click", function() {  //events [,selector][,data]
