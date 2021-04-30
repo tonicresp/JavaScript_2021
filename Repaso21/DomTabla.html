@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Tabla</title>
+</head>
+<body>
+    <h1>Tablas</h1>
+    
+		<!-- Tabla HTML -->
+		<table id="miTabla" border="1" cellspacing="1" cellpadding="1">
+			<!-- Definición la línea nº 0 de la tabla (título) -->
+			<tr>
+				<td>Modelo</td>
+				<td>Potencia</td>
+			</tr>
+			<!-- Definición la línea nº1 de la tabla -->
+			<tr>
+				<td>Ferrari 512 BB</td>
+				<td>380</td>
+			</tr>
+			<!-- Definición la línea nº2 de la tabla -->
+			<tr>
+				<td>Lamborghini Miura</td>
+				<td>385</td>
+			</tr>
+			<!-- Definición de la línea nº3 de la tabla -->
+			<tr>
+				<td>Porsche 964 3.6</td>
+				<td>360</td>
+			</tr>
+		</table>
+
+		<!-- Formulario con botones -->
+		<br />
+		<br />
+		<form>
+			Modificación de los valores de atributos de la tabla
+			<br> <br />
+			<input type="button" id="botonBorder" value="ModificaciónAtributo border"
+			onclick="modificarBorder();" />
+			<br />
+			<input type="button" id="botonCellspacing" value="ModificaciónAtributo cellspacing"
+			onclick="modificarCellspacing();" />
+			<br />
+			<input type="button" id="botonCellpadding" value="ModificaciónAtributo cellpadding"
+			onclick="modificarCellpadding();" />
+			<br />
+			<input type="button" id="botonCaption" value="Modificación del título de tabla"
+			onclick="AgregarCaption();"	/>
+		</form>
+<script src="DomTabla.js"></script>
+</body>
+</html>
