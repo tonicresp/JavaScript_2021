@@ -1,0 +1,28 @@
+{
+    "barcos":[
+    {
+        "nombre":"Lanzadera", 
+        "tipo_barco":"lancha rapida",
+        "disparos_vida":2,
+        "puntos":5,
+        "imagen_inicial":"lanchaok.jpg", 
+        "imagen_hundir":"ko.jpg" 
+    },
+    {
+        "nombre":"CrossFire",
+        "tipo_barco":"destructor",
+        "disparos_vida":3,
+        "puntos": 10, 
+        "imagen_inicial":"destructorok.jpg", 
+        "imagen_hundir":"ko.jpg"
+    },
+    {
+        "nombre":"Rocinante",
+        "tipo_barco":"portaviones",
+        "disparos_vida":4,
+        "puntos": 15, 
+        "imagen_inicial":"portavionesok.jpg", 
+        "imagen_hundir":"ko.jpg"
+    }
+    ]
+}
