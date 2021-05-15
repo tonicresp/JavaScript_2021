@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="author" content="MA"> 
+    <script   src="https://code.jquery.com/jquery-3.5.1.js"   
+     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="   
+     crossorigin="anonymous"></script>
+    <title>Viajes</title> 
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+</head> 
+<body> 
+    <header> 
+    <img src="" alt="Imagen Viajes Cabecera"> 
+    <section>
+        <hl>Mis viajes por el mundo ••• </hl> 
+        <h3 id="texto"> ••• he visitado</h3>
+    </section>
+    <section id="bienvenida"> 
+        <hl>Bienvenido</hl>
+        <h3 id="nombreUsr"></h3> 
+    </section>
+    </header> 
+    <div id="login"> 
+        <form id="formLogin" name="formLogin" action="index.html" method="post">
+<!--Sólo se especifican los elementos significativos para el desarrollo del ejercicio -->
+            <input type="text" id="usuario" name="usuario" size="22"
+                placeholder="Introduce usuario.." autofocus />
+
+            <input type="password" id="clave" name="clave" size="22"
+                placeholder="Introduce contraseña..." />
+
+            <div id="envio">
+                <input type="submit" id="botonEnvio" name="botonEnvio" value="Enviar" /> 
+            </div> 
+        </form>
+    </div> 
+    <div id="contenedorViajes"> 
+        <!-- div donde se muestran las tres posibles respuestas -->
+    </div> 
+    <footer> 
+    <div>Sistemas y aplicaciones informaticas - 2016</div> 
+    </footer>
+    <!--script src=" scripts/jquery-3.0.0.min.js" ></script--> 
+    <script src="viajes.js"></script> 
+</body>
+</html> 

@@ -1,0 +1,24 @@
+{ 
+    "usuario":{ "nombre":"Marga",
+    "apellidos":"Fontestad Ribalta"
+    },
+    "viajes":[
+        { "destino": "Venecia", 
+        "foto":"Venecia.jpg",
+        "descripcion": "Abril 2016. Me encanto este destino , sus gentes y su estilo de vida",
+        "puntuacion":4 
+        }, 
+        {"destino":"Seatle",
+        "foto":"Seattle.jpg", 
+        "descripcion":"Julio 2012. Estábamos en las Olimpiadas",
+        "puntuacion":3 
+        },
+        {"destino":"Paris",
+        "foto":"Paris.jpg", 
+        "descripcion":"Enero 2010. Del reino de los dioses (Angkor Wat) al infierno (jemeres rojos en Tuol Sleng)", 
+        "puntuacion":5
+        }
+    ]
+}  
+
+   
